@@ -1,9 +1,8 @@
 import { Module } from '@nestjs/common';
 import { ProcessMonitorService } from './process-monitor.service';
-import { ProcessMonitorController } from './process-monitor.controller';
+import { ProcessMonitorGateway } from './process-monitor.gateway';
 
 @Module({
-  providers: [ProcessMonitorService],
-  controllers: [ProcessMonitorController],
+  providers: [ProcessMonitorService, ProcessMonitorGateway],
 })
 export class ProcessMonitorModule {}
