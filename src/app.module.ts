@@ -5,6 +5,7 @@ import { ProcessMonitorModule } from './process-monitor/process-monitor.module';
 import { MemoryAnalysisModule } from './memory-analysis/memory-analysis.module';
 import { FileSystemExplorerModule } from './file-system-explorer/file-system-explorer.module';
 import { InputOutputMonitorModule } from './input-output-monitor/input-output-monitor.module';
+import { NetworkActivityAnalysisModule } from './network-activity-analysis/network-activity-analysis.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { InputOutputMonitorModule } from './input-output-monitor/input-output-mo
     MemoryAnalysisModule,
     FileSystemExplorerModule,
     InputOutputMonitorModule,
+    NetworkActivityAnalysisModule,
   ],
   controllers: [AppController],
   providers: [AppService],
