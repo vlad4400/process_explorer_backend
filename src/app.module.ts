@@ -7,6 +7,7 @@ import { FileSystemExplorerModule } from './file-system-explorer/file-system-exp
 import { InputOutputMonitorModule } from './input-output-monitor/input-output-monitor.module';
 import { NetworkActivityAnalysisModule } from './network-activity-analysis/network-activity-analysis.module';
 import { UserAccountsModule } from './user-accounts/user-accounts.module';
+import { SystemServicesMonitorModule } from './system-services-monitor/system-services-monitor.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { UserAccountsModule } from './user-accounts/user-accounts.module';
     InputOutputMonitorModule,
     NetworkActivityAnalysisModule,
     UserAccountsModule,
+    SystemServicesMonitorModule,
   ],
   controllers: [AppController],
   providers: [AppService],
